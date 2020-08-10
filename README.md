@@ -1,6 +1,6 @@
-# tic_tac_toe
+# Tic Tac Toe
 
-A new Flutter application.
+A simple game created in Flutter utilizing specific Draggable widgets for training purposes.
 
 ## Getting Started
 
