@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:tic_tac_toe/utils/matrix_checker.dart';
 import 'package:tic_tac_toe/widgets/tic_tac_toe.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(Phoenix(child: App()));
@@ -42,6 +43,15 @@ class MyTicTacToeState extends State<MyTicTacToe> {
   List<int> matrixValues = [2, 2, 2, 2, 2, 2, 2, 2, 2];
   String crossOrCircle = "Cross";
   String lastAction = "";
+
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.landscapeRight,
+      DeviceOrientation.landscapeLeft,
+    ]);
+  }
 
   @override
   Widget build(BuildContext context) {
