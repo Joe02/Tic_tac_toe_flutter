@@ -48,8 +48,8 @@ class MyTicTacToeState extends State<MyTicTacToe> {
   void initState() {
     super.initState();
     SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.portraitUp,
     ]);
   }
 
